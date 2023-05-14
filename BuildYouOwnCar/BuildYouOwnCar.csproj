@@ -66,6 +66,12 @@
     <Compile Include="Spoiler.Designer.cs">
       <DependentUpon>Spoiler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Summary.Designer.cs">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Wheels.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </Compile>
     <EmbeddedResource Include="Spoiler.resx">
       <DependentUpon>Spoiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Summary.resx">
+      <DependentUpon>Summary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wheels.resx">
       <DependentUpon>Wheels.cs</DependentUpon>
@@ -151,6 +160,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\None.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matiz_Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Priora_Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MazdaRX7_Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeViper_Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeCharger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2023-05-13 в 04.55.31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2023-05-13 в 04.56.42.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

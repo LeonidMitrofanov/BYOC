@@ -76,8 +76,8 @@
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.flowLayoutPanelWheels);
-            this.splitContainer.Size = new System.Drawing.Size(590, 552);
-            this.splitContainer.SplitterDistance = 338;
+            this.splitContainer.Size = new System.Drawing.Size(584, 561);
+            this.splitContainer.SplitterDistance = 349;
             this.splitContainer.SplitterWidth = 2;
             this.splitContainer.TabIndex = 0;
             // 
@@ -90,7 +90,7 @@
             this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel.Controls.Add(this.buttonGoNext, 1, 0);
             this.tableLayoutPanel.Controls.Add(this.buttonGoBack, 0, 0);
-            this.tableLayoutPanel.Location = new System.Drawing.Point(358, 2);
+            this.tableLayoutPanel.Location = new System.Drawing.Point(352, 2);
             this.tableLayoutPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 1;
@@ -130,7 +130,7 @@
             this.flowLayoutPanelWheels.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelWheels.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanelWheels.Name = "flowLayoutPanelWheels";
-            this.flowLayoutPanelWheels.Size = new System.Drawing.Size(590, 212);
+            this.flowLayoutPanelWheels.Size = new System.Drawing.Size(584, 210);
             this.flowLayoutPanelWheels.TabIndex = 0;
             this.flowLayoutPanelWheels.WrapContents = false;
             // 
@@ -167,7 +167,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Location = new System.Drawing.Point(156, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(150, 206);
             this.panel1.TabIndex = 1;
@@ -191,7 +191,7 @@
             this.pictureBoxCar.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxCar.Name = "pictureBoxCar";
-            this.pictureBoxCar.Size = new System.Drawing.Size(590, 338);
+            this.pictureBoxCar.Size = new System.Drawing.Size(584, 349);
             this.pictureBoxCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCar.TabIndex = 0;
             this.pictureBoxCar.TabStop = false;
@@ -231,6 +231,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             // 
             // pictureBox2
             // 
@@ -248,7 +249,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 552);
+            this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.splitContainer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);

@@ -127,11 +127,11 @@
   <data name="Diamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Diamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Lada2114_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lada2114_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NotPaintedDot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NotPaintedDot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lada2114_Spoiler" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lada2114_Spoiler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wheels_LadaStandart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wheels_LadaStandart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,11 +139,23 @@
   <data name="BlackCheckMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BlackCheckMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Priora_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Priora_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DogeViper_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DogeViper_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="None" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\None.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PaintedDot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PaintedDot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WhiteCheckMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhiteCheckMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Снимок экрана 2023-05-13 в 04.55.31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Снимок экрана 2023-05-13 в 04.55.31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GreenGalochka" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GreenGalochka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,10 +166,19 @@
   <data name="NoFound404" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NoFound404.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lada2114_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lada2114_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Matiz_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Matiz_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="None" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\None.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MazdaRX7_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MazdaRX7_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DogeCharger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DogeCharger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lada2114_Spoiler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lada2114_Spoiler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Снимок экрана 2023-05-13 в 04.56.42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Снимок экрана 2023-05-13 в 04.56.42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

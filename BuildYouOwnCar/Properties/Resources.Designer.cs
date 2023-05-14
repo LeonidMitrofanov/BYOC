@@ -83,6 +83,26 @@ namespace BuildYouOwnCar.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DogeCharger {
+            get {
+                object obj = ResourceManager.GetObject("DogeCharger", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DogeViper_Main {
+            get {
+                object obj = ResourceManager.GetObject("DogeViper_Main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GreenGalochka {
             get {
                 object obj = ResourceManager.GetObject("GreenGalochka", resourceCulture);
@@ -133,6 +153,26 @@ namespace BuildYouOwnCar.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Matiz_Main {
+            get {
+                object obj = ResourceManager.GetObject("Matiz_Main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MazdaRX7_Main {
+            get {
+                object obj = ResourceManager.GetObject("MazdaRX7_Main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NoFound404 {
             get {
                 object obj = ResourceManager.GetObject("NoFound404", resourceCulture);
@@ -173,6 +213,16 @@ namespace BuildYouOwnCar.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Priora_Main {
+            get {
+                object obj = ResourceManager.GetObject("Priora_Main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap spoiler_LadaDefolt {
             get {
                 object obj = ResourceManager.GetObject("spoiler_LadaDefolt", resourceCulture);
@@ -196,6 +246,26 @@ namespace BuildYouOwnCar.Properties {
         internal static System.Drawing.Bitmap WhiteCheckMark {
             get {
                 object obj = ResourceManager.GetObject("WhiteCheckMark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Снимок_экрана_2023_05_13_в_04_55_31 {
+            get {
+                object obj = ResourceManager.GetObject("Снимок экрана 2023-05-13 в 04.55.31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Снимок_экрана_2023_05_13_в_04_56_42 {
+            get {
+                object obj = ResourceManager.GetObject("Снимок экрана 2023-05-13 в 04.56.42", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
