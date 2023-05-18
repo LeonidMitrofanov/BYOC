@@ -120,7 +120,9 @@
     <None Include="Resources\NoFound404.gif" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Folder Include="Images\Cars\" />
+    <Folder Include="Images\Spoilers\" />
+    <Folder Include="Images\Wheels\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Lada2114_Main.png" />
@@ -181,6 +183,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Снимок экрана 2023-05-13 в 04.56.42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{a854122f-68bb-4ba2-8f0b-cb90174bbb21}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,35 +32,40 @@
             this.flowLayoutPanelAllCars = new System.Windows.Forms.FlowLayoutPanel();
             this.panelCar = new System.Windows.Forms.Panel();
             this.labelCarName = new System.Windows.Forms.Label();
+            this.pictureBoxCar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBoxCar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBoxsSearch = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripMenuItemSearchImage = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanelAllCars.SuspendLayout();
             this.panelCar.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCar)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanelAllCars
@@ -73,10 +78,10 @@
             this.flowLayoutPanelAllCars.Controls.Add(this.panel4);
             this.flowLayoutPanelAllCars.Controls.Add(this.panel5);
             this.flowLayoutPanelAllCars.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanelAllCars.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanelAllCars.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.flowLayoutPanelAllCars.Location = new System.Drawing.Point(0, 27);
+            this.flowLayoutPanelAllCars.Margin = new System.Windows.Forms.Padding(5);
             this.flowLayoutPanelAllCars.Name = "flowLayoutPanelAllCars";
-            this.flowLayoutPanelAllCars.Size = new System.Drawing.Size(984, 461);
+            this.flowLayoutPanelAllCars.Size = new System.Drawing.Size(981, 418);
             this.flowLayoutPanelAllCars.TabIndex = 0;
             // 
             // panelCar
@@ -87,7 +92,7 @@
             this.panelCar.Controls.Add(this.pictureBoxCar);
             this.panelCar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelCar.Location = new System.Drawing.Point(5, 5);
-            this.panelCar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panelCar.Margin = new System.Windows.Forms.Padding(5);
             this.panelCar.Name = "panelCar";
             this.panelCar.Size = new System.Drawing.Size(310, 218);
             this.panelCar.TabIndex = 0;
@@ -105,6 +110,20 @@
             this.labelCarName.TabIndex = 1;
             this.labelCarName.Text = "Lada 2114";
             // 
+            // pictureBoxCar
+            // 
+            this.pictureBoxCar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxCar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBoxCar.Image = global::BuildYouOwnCar.Properties.Resources.Lada2114_Main;
+            this.pictureBoxCar.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxCar.Name = "pictureBoxCar";
+            this.pictureBoxCar.Size = new System.Drawing.Size(310, 187);
+            this.pictureBoxCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCar.TabIndex = 0;
+            this.pictureBoxCar.TabStop = false;
+            this.pictureBoxCar.Click += new System.EventHandler(this.pictureBoxCar_Click);
+            // 
             // panel1
             // 
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -113,7 +132,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Location = new System.Drawing.Point(325, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(310, 218);
             this.panel1.TabIndex = 1;
@@ -131,6 +150,19 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Matiz";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::BuildYouOwnCar.Properties.Resources.Matiz_Main;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(310, 187);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -139,7 +171,7 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel2.Location = new System.Drawing.Point(645, 5);
-            this.panel2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 218);
             this.panel2.TabIndex = 2;
@@ -157,6 +189,19 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Priora";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox2.Image = global::BuildYouOwnCar.Properties.Resources.Priora_Main;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(310, 187);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -165,7 +210,7 @@
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel3.Location = new System.Drawing.Point(5, 233);
-            this.panel3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(310, 218);
             this.panel3.TabIndex = 3;
@@ -183,6 +228,19 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Mazda RX7";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox3.Image = global::BuildYouOwnCar.Properties.Resources.MazdaRX7_Main;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(310, 187);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -191,7 +249,7 @@
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel4.Location = new System.Drawing.Point(325, 233);
-            this.panel4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 218);
             this.panel4.TabIndex = 4;
@@ -209,6 +267,19 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Dodge Viper";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox4.Image = global::BuildYouOwnCar.Properties.Resources.DogeViper_Main;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(310, 187);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
             // panel5
             // 
             this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -217,7 +288,7 @@
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel5.Location = new System.Drawing.Point(645, 233);
-            this.panel5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel5.Margin = new System.Windows.Forms.Padding(5);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(310, 218);
             this.panel5.TabIndex = 5;
@@ -235,71 +306,6 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Dodge Charger";
             // 
-            // pictureBoxCar
-            // 
-            this.pictureBoxCar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxCar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBoxCar.Image = global::BuildYouOwnCar.Properties.Resources.Lada2114_Main;
-            this.pictureBoxCar.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxCar.Name = "pictureBoxCar";
-            this.pictureBoxCar.Size = new System.Drawing.Size(310, 187);
-            this.pictureBoxCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxCar.TabIndex = 0;
-            this.pictureBoxCar.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::BuildYouOwnCar.Properties.Resources.Matiz_Main;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(310, 187);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Image = global::BuildYouOwnCar.Properties.Resources.Priora_Main;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(310, 187);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox3.Image = global::BuildYouOwnCar.Properties.Resources.MazdaRX7_Main;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(310, 187);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox4.Image = global::BuildYouOwnCar.Properties.Resources.DogeViper_Main;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(310, 187);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox5
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -313,38 +319,72 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // menuStrip
+            // 
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem,
+            this.toolStripTextBoxsSearch,
+            this.toolStripMenuItemSearchImage});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(981, 27);
+            this.menuStrip.TabIndex = 1;
+            this.menuStrip.Text = "menuStrip";
+            // 
+            // toolStripMenuItem
+            // 
+            this.toolStripMenuItem.Name = "toolStripMenuItem";
+            this.toolStripMenuItem.Size = new System.Drawing.Size(54, 23);
+            this.toolStripMenuItem.Text = "Поиск";
+            // 
+            // toolStripTextBoxsSearch
+            // 
+            this.toolStripTextBoxsSearch.Name = "toolStripTextBoxsSearch";
+            this.toolStripTextBoxsSearch.Size = new System.Drawing.Size(100, 23);
+            // 
+            // toolStripMenuItemSearchImage
+            // 
+            this.toolStripMenuItemSearchImage.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemSearchImage.Image")));
+            this.toolStripMenuItemSearchImage.ImageTransparentColor = System.Drawing.Color.White;
+            this.toolStripMenuItemSearchImage.Name = "toolStripMenuItemSearchImage";
+            this.toolStripMenuItemSearchImage.Size = new System.Drawing.Size(28, 23);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(984, 461);
+            this.ClientSize = new System.Drawing.Size(981, 445);
             this.Controls.Add(this.flowLayoutPanelAllCars);
+            this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(360, 260);
             this.Name = "MainForm";
             this.Text = "BYOC";
             this.flowLayoutPanelAllCars.ResumeLayout(false);
             this.panelCar.ResumeLayout(false);
             this.panelCar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCar)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -369,6 +409,10 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxsSearch;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemSearchImage;
     }
 }
 

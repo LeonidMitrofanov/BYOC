@@ -43,6 +43,8 @@
             this.pictureBoxWheels = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.labelWheelsPrice = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
@@ -76,8 +78,8 @@
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.flowLayoutPanelWheels);
-            this.splitContainer.Size = new System.Drawing.Size(584, 561);
-            this.splitContainer.SplitterDistance = 349;
+            this.splitContainer.Size = new System.Drawing.Size(754, 661);
+            this.splitContainer.SplitterDistance = 441;
             this.splitContainer.SplitterWidth = 2;
             this.splitContainer.TabIndex = 0;
             // 
@@ -90,7 +92,7 @@
             this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel.Controls.Add(this.buttonGoNext, 1, 0);
             this.tableLayoutPanel.Controls.Add(this.buttonGoBack, 0, 0);
-            this.tableLayoutPanel.Location = new System.Drawing.Point(352, 2);
+            this.tableLayoutPanel.Location = new System.Drawing.Point(522, 2);
             this.tableLayoutPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 1;
@@ -130,13 +132,14 @@
             this.flowLayoutPanelWheels.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelWheels.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanelWheels.Name = "flowLayoutPanelWheels";
-            this.flowLayoutPanelWheels.Size = new System.Drawing.Size(584, 210);
+            this.flowLayoutPanelWheels.Size = new System.Drawing.Size(754, 218);
             this.flowLayoutPanelWheels.TabIndex = 0;
             this.flowLayoutPanelWheels.WrapContents = false;
             // 
             // panelWheels
             // 
-            this.panelWheels.BackColor = System.Drawing.Color.White;
+            this.panelWheels.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panelWheels.Controls.Add(this.labelWheelsPrice);
             this.panelWheels.Controls.Add(this.pictureBoxStatus);
             this.panelWheels.Controls.Add(this.labelWheelsName);
             this.panelWheels.Controls.Add(this.pictureBoxWheels);
@@ -161,7 +164,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -191,7 +195,7 @@
             this.pictureBoxCar.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxCar.Name = "pictureBoxCar";
-            this.pictureBoxCar.Size = new System.Drawing.Size(584, 349);
+            this.pictureBoxCar.Size = new System.Drawing.Size(754, 441);
             this.pictureBoxCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCar.TabIndex = 0;
             this.pictureBoxCar.TabStop = false;
@@ -245,11 +249,33 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // labelWheelsPrice
+            // 
+            this.labelWheelsPrice.AutoSize = true;
+            this.labelWheelsPrice.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelWheelsPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelWheelsPrice.Location = new System.Drawing.Point(0, 190);
+            this.labelWheelsPrice.Name = "labelWheelsPrice";
+            this.labelWheelsPrice.Size = new System.Drawing.Size(25, 16);
+            this.labelWheelsPrice.TabIndex = 3;
+            this.labelWheelsPrice.Text = "0 р";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(0, 190);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 16);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "5 000 р";
+            // 
             // Wheels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.ClientSize = new System.Drawing.Size(754, 661);
             this.Controls.Add(this.splitContainer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -290,5 +316,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label labelWheelsPrice;
+        private System.Windows.Forms.Label label2;
     }
 }
