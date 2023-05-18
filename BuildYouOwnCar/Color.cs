@@ -32,7 +32,6 @@ namespace BuildYouOwnCar
                 panelColor.Cursor = System.Windows.Forms.Cursors.Hand;
                 panelColor.Location = new System.Drawing.Point(5, 145);
                 panelColor.Margin = new System.Windows.Forms.Padding(5);
-                //panelColor.Name = "panelColorBlue";
                 panelColor.Size = new System.Drawing.Size(140, 60);
                 panelColor.TabIndex = 4;
                 panelColor.Visible = false;
@@ -46,8 +45,7 @@ namespace BuildYouOwnCar
                     pictureBoxColorMark.Image = Properties.Resources.WhiteCheckMark;
                 pictureBoxColorMark.Location = new System.Drawing.Point(0, 0);
                 pictureBoxColorMark.Margin = new System.Windows.Forms.Padding(2);
-                //pictureBoxColorMark.Name = "pictureBox4";
-                pictureBoxColorMark.Size = new System.Drawing.Size(34, 37);
+                pictureBoxColorMark.Size = new System.Drawing.Size(37, 37);
                 pictureBoxColorMark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
                 pictureBoxColorMark.TabIndex = 1;
                 pictureBoxColorMark.TabStop = false;
@@ -60,7 +58,6 @@ namespace BuildYouOwnCar
                 labelColorName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
                 labelColorName.Location = new System.Drawing.Point(0, 37);
                 labelColorName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-                //labelColorName.Name = "label4";
                 labelColorName.Size = new System.Drawing.Size(61, 21);
                 labelColorName.TabIndex = 0;
                 labelColorName.Text = color.Name;

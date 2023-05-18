@@ -41,6 +41,14 @@ namespace Model
         public Wheels wheels { get => _wheels; }
         public Spoiler spoiler { get => _spoiler; }
 
+        private Int16 _id;
+        private string _name;
+        private float _price;
+        private (string Front, string Side, string Back) _images = (null, null, null);
+        private (Int16 ConfigurationId, Int16 CarId, Color color, Wheels wheels, Spoiler spoiler) _standartConfiguration;
+        private Color _color;
+        private Wheels _wheels;
+        private Spoiler _spoiler;
 
         private Car(Int16 id, string name, float price, (string Front, string Side, string Back) images, (Int16 ConfigurationId, Int16 CarId, Color Color, Wheels Wheels, Spoiler Spoiler) configuration)
         {
@@ -53,16 +61,6 @@ namespace Model
             _wheels = configuration.Wheels;
             _spoiler = configuration.Spoiler;
         }
-
-        private Int16 _id;
-        private string _name;
-        private float _price;
-        private (string Front, string Side, string Back) _images = (null, null, null);
-        private (Int16 ConfigurationId, Int16 CarId, Color color, Wheels wheels, Spoiler spoiler) _standartConfiguration;
-        private Color _color;
-        private Wheels _wheels;
-        private Spoiler _spoiler;
-
 
         public void SetColor(Color newColor)
         {
@@ -103,6 +101,11 @@ namespace Model
         private void UpdateImages()
         {
             _images = DB.GetCarImagesByCarAttributes(this.Id, this.color.Id, this.wheels.Id, this.spoiler.Id);
+        }
+
+        public void availableColors()
+        {
+
         }
     }
 }
