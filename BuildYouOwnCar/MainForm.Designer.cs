@@ -103,7 +103,7 @@
             this.labelCarName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelCarName.Font = new System.Drawing.Font("Times New Roman", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCarName.ForeColor = System.Drawing.Color.White;
-            this.labelCarName.Location = new System.Drawing.Point(0, 187);
+            this.labelCarName.Location = new System.Drawing.Point(0, 183);
             this.labelCarName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCarName.Name = "labelCarName";
             this.labelCarName.Size = new System.Drawing.Size(104, 25);
@@ -118,11 +118,10 @@
             this.pictureBoxCar.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxCar.Name = "pictureBoxCar";
-            this.pictureBoxCar.Size = new System.Drawing.Size(310, 187);
-            this.pictureBoxCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCar.Size = new System.Drawing.Size(310, 183);
+            this.pictureBoxCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCar.TabIndex = 0;
             this.pictureBoxCar.TabStop = false;
-            this.pictureBoxCar.Click += new System.EventHandler(this.pictureBoxCar_Click);
             // 
             // panel1
             // 
@@ -361,6 +360,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(360, 260);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "BYOC";
             this.flowLayoutPanelAllCars.ResumeLayout(false);
             this.panelCar.ResumeLayout(false);

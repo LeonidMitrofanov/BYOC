@@ -2,10 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Model
 {
@@ -36,21 +32,18 @@ namespace Model
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                openConnection();
+
+                string query = "SELECT id FROM Cars";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    openConnection();
-
-                    string query = "SELECT id FROM Cars";
-
-                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    using (MySqlDataReader reader = command.ExecuteReader())
                     {
-                        using (MySqlDataReader reader = command.ExecuteReader())
+                        while (reader.Read())
                         {
-                            while (reader.Read())
-                            {
-                                Int16 carId = reader.GetInt16(0);
-                                carIds.Add(carId);
-                            }
+                            Int16 carId = reader.GetInt16(0);
+                            carIds.Add(carId);
                         }
                     }
                 }
@@ -67,8 +60,7 @@ namespace Model
             List<Int16> configurationIds = new List<Int16>();
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
-                {
+                
                     openConnection();
 
                     string query = "SELECT configuration_id FROM Standart_configuration WHERE car_id = @carId";
@@ -86,7 +78,7 @@ namespace Model
                             }
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -100,8 +92,7 @@ namespace Model
             try
             {
                 (Int16 ConfigurationId, Int16 CarId, Int16 ColorId, Int16 WheelsId, Int16 SpoilerId) cfg = (-1, -1, -1, -1, -1);
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
-                {
+                
                     openConnection();
                     string query = "SELECT * FROM Configuration WHERE id = @configurationId";
 
@@ -121,19 +112,18 @@ namespace Model
                             }
                         }
                     }
-                }
+                
                 return cfg;
             }
             catch { throw new ArgumentException(); }
         }
-        static public (string Name, float Price) GetCarInfoById(int carId)
+        static public (string Name, float Price) GetCarInfoById(Int16 carId)
         {
             (string Name, float Price) car = (null, -1);
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
-                {
+                
                     openConnection();
 
                     string query = "SELECT * FROM Cars WHERE id = @carId";
@@ -151,7 +141,7 @@ namespace Model
                             }
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -160,14 +150,13 @@ namespace Model
 
             return car;
         }
-        static public (string Front, string Side, string Back) GetCarImagesByConfigurationId(int configurationId)
+        static public (string Front, string Side, string Back) GetCarImagesByConfigurationId(Int16 configurationId)
         {
             (string Front, string Side, string Back) carImage = (null,null,null);
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
-                {
+                
                     openConnection();
                     string query = "SELECT * FROM Car_image WHERE configuration_id = @configurationId";
 
@@ -185,7 +174,7 @@ namespace Model
                             }
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -194,16 +183,15 @@ namespace Model
 
             return carImage;
         }
-        static public (string Front, string Side, string Back) GetCarImagesByCarAttributes(int carId, int colorId, int wheelsId, int spoilerId)
+        static public (string Front, string Side, string Back) GetCarImagesByCarAttributes(Int16 carId, Int16 colorId, Int16 wheelsId, Int16 spoilerId)
         {
             (string Front, string Side, string Back) carImages = (null,null,null);
 
-            try
+            //try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
-                {
+                
                     openConnection();
-                    string query = @"SELECT configuration_id
+                    string query = @"SELECT id
                                  FROM Configuration
                                  WHERE car_id = @carId AND Color_id = @colorId
                                        AND Wheels_id = @wheelsId AND Spoiler_id = @spoilerId";
@@ -239,26 +227,128 @@ namespace Model
                             }
                         }
                     }
-                }
+                
+            }
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("An error occurred: " + ex.Message);
+            //}
+
+            return carImages;
+        }
+
+        static public List<Int16> GetAvailableColorsByCarId(Int16 carId)
+        {
+            List<Int16> availableColors = new List<Int16>();
+
+            try
+            {
+                
+                    openConnection();
+
+                    string query = @"SELECT DISTINCT Color_id
+                                 FROM Configuration
+                                 WHERE car_id = @carId";
+
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@carId", carId);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                Int16 colorId = reader.GetInt16(0);
+                                availableColors.Add(colorId);
+                            }
+                        }
+                    }
+                
             }
             catch (Exception ex)
             {
                 Console.WriteLine("An error occurred: " + ex.Message);
             }
 
-            return carImages;
+            return availableColors;
         }
+        static public List<Int16> GetAvailableWheelsByCarAndColorIds(Int16 carId, Int16 colorId)
+        {
+            List<Int16> availableWheels = new List<Int16>();
 
+            try
+            {
+                openConnection();
+                string query = @"SELECT DISTINCT Wheels_id
+                                 FROM Configuration
+                                 WHERE car_id = @carId AND Color_id = @colorId";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@carId", carId);
+                    command.Parameters.AddWithValue("@colorId", colorId);
+
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Int16 wheelsId = reader.GetInt16(0);
+                            availableWheels.Add(wheelsId);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+            return availableWheels;
+        }
+        static public List<Int16> GetAvailableSpoilersByCarColorAndWheelsIds(Int16 carId, Int16 colorId, Int16 wheelsId)
+        {
+            List<Int16> availableSpoilers = new List<Int16>();
+
+            try
+            {
+                openConnection();
+
+                string query = @"SELECT DISTINCT Spoiler_id
+                                 FROM Configuration
+                                 WHERE car_id = @carId AND Color_id = @colorId AND Wheels_id = @wheelsId";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@carId", carId);
+                    command.Parameters.AddWithValue("@colorId", colorId);
+                    command.Parameters.AddWithValue("@wheelsId", wheelsId);
+
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Int16 spoilerId = reader.GetInt16(0);
+                            availableSpoilers.Add(spoilerId);
+                        }
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+
+            return availableSpoilers;
+        }
         #endregion
         #region Color
-        static public (string Name, string RGB, float Price) GetColorsById(int colorId)
+        static public (string Name, string RGB, float Price) GetColorsById(Int16 colorId)
         {
             (string Name, string RGB, float Price) colors = (null,null,-1);
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
-                {
+                
                     openConnection();
 
                     string query = "SELECT * FROM Colors WHERE id = @colorId";
@@ -277,7 +367,7 @@ namespace Model
                             }
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -288,14 +378,13 @@ namespace Model
         }
         #endregion
         #region Wheels
-        static public (string Name, float Price, string Image) GetWheelsWithImageById(int wheelsId)
+        static public (string Name, float Price, string Image) GetWheelsWithImageById(Int16 wheelsId)
         {
             (string Name, float Price, string Image) wheelsWithImage = (null, -1, null);
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
-                {
+                
                     openConnection();
 
                     string query = @"SELECT w.id, w.Name, w.Price, wi.image
@@ -317,7 +406,7 @@ namespace Model
                             }
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -328,14 +417,13 @@ namespace Model
         }
         #endregion
         #region Spoiler
-        static public (string Name, float Price, string Image) GetSpoilerWithImageById(int spoilerId)
+        static public (string Name, float Price, string Image) GetSpoilerWithImageById(Int16 spoilerId)
         {
             (string Name, float Price, string Image) spoilerWithImage = (null, -1, null);
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
-                {
+                
                     openConnection();
 
                     string query = @"SELECT s.id, s.Name, s.Price, si.image
@@ -357,7 +445,7 @@ namespace Model
                             }
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {

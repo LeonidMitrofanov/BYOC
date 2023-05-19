@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Model;
 namespace BuildYouOwnCar
 {
     internal static class Program
@@ -16,7 +16,7 @@ namespace BuildYouOwnCar
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new BuildYouOwnCar.MainForm());
         }
     }
 }

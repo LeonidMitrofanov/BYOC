@@ -73,6 +73,16 @@ namespace BuildYouOwnCar.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CarLoading_Orange {
+            get {
+                object obj = ResourceManager.GetObject("CarLoading_Orange", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Diamond {
             get {
                 object obj = ResourceManager.GetObject("Diamond", resourceCulture);
@@ -146,6 +156,16 @@ namespace BuildYouOwnCar.Properties {
         internal static System.Drawing.Bitmap Lada2114_Wheels {
             get {
                 object obj = ResourceManager.GetObject("Lada2114_Wheels", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Loading_Circule {
+            get {
+                object obj = ResourceManager.GetObject("Loading_Circule", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

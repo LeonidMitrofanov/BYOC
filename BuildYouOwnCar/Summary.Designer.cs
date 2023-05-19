@@ -32,14 +32,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonBuildAnotherCar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelFinalPrice = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelAutoInfo = new System.Windows.Forms.Panel();
             this.tableLayoutPanelCarImage = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCarFront = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCarBack = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCarSide = new System.Windows.Forms.PictureBox();
             this.labelCarName = new System.Windows.Forms.Label();
             this.panelColor = new System.Windows.Forms.Panel();
             this.panelColorInfo = new System.Windows.Forms.Panel();
@@ -56,25 +56,25 @@
             this.labelSpoilerPrice = new System.Windows.Forms.Label();
             this.labelSpoilerName = new System.Windows.Forms.Label();
             this.labelSpoiler = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelAtributes = new System.Windows.Forms.Panel();
             this.panelStartingPrice = new System.Windows.Forms.Panel();
-            this.labelStartingPriceCount = new System.Windows.Forms.Label();
-            this.labelStartingPriceName = new System.Windows.Forms.Label();
+            this.labelStartPrice = new System.Windows.Forms.Label();
+            this.labelStartingPriceText = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelAutoInfo.SuspendLayout();
             this.tableLayoutPanelCarImage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCarFront)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCarBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCarSide)).BeginInit();
             this.panelColor.SuspendLayout();
             this.panelColorInfo.SuspendLayout();
             this.panelWheels.SuspendLayout();
             this.panelWheelsInfo.SuspendLayout();
             this.panelSpoiler.SuspendLayout();
             this.panelSpoilerInfo.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelAtributes.SuspendLayout();
             this.panelStartingPrice.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,10 +105,11 @@
             this.buttonBuildAnotherCar.TabIndex = 3;
             this.buttonBuildAnotherCar.Text = "Создать новый автомобиль";
             this.buttonBuildAnotherCar.UseVisualStyleBackColor = false;
+            this.buttonBuildAnotherCar.Click += new System.EventHandler(this.buttonBuildAnotherCar_Click);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.labelFinalPrice);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -116,17 +117,17 @@
             this.panel3.Size = new System.Drawing.Size(982, 56);
             this.panel3.TabIndex = 2;
             // 
-            // label1
+            // labelFinalPrice
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(870, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 32);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "53 000р";
+            this.labelFinalPrice.AutoSize = true;
+            this.labelFinalPrice.Dock = System.Windows.Forms.DockStyle.Right;
+            this.labelFinalPrice.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFinalPrice.ForeColor = System.Drawing.Color.White;
+            this.labelFinalPrice.Location = new System.Drawing.Point(870, 0);
+            this.labelFinalPrice.Name = "labelFinalPrice";
+            this.labelFinalPrice.Size = new System.Drawing.Size(112, 32);
+            this.labelFinalPrice.TabIndex = 2;
+            this.labelFinalPrice.Text = "53 000р";
             // 
             // label2
             // 
@@ -155,7 +156,7 @@
             this.tableLayoutPanelCarImage.BackColor = System.Drawing.Color.Maroon;
             this.tableLayoutPanelCarImage.ColumnCount = 1;
             this.tableLayoutPanelCarImage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelCarImage.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanelCarImage.Controls.Add(this.pictureBoxCarFront, 0, 0);
             this.tableLayoutPanelCarImage.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanelCarImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanelCarImage.Location = new System.Drawing.Point(0, 36);
@@ -166,25 +167,25 @@
             this.tableLayoutPanelCarImage.Size = new System.Drawing.Size(619, 548);
             this.tableLayoutPanelCarImage.TabIndex = 1;
             // 
-            // pictureBox1
+            // pictureBoxCarFront
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::BuildYouOwnCar.Properties.Resources.Lada2114_Color;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(613, 356);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxCarFront.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBoxCarFront.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxCarFront.Image = global::BuildYouOwnCar.Properties.Resources.Loading_Circule;
+            this.pictureBoxCarFront.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxCarFront.Name = "pictureBoxCarFront";
+            this.pictureBoxCarFront.Size = new System.Drawing.Size(613, 356);
+            this.pictureBoxCarFront.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCarFront.TabIndex = 0;
+            this.pictureBoxCarFront.TabStop = false;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBoxCarBack, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBoxCarSide, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 365);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -193,29 +194,29 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(613, 180);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // pictureBox3
+            // pictureBoxCarBack
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::BuildYouOwnCar.Properties.Resources.Lada2114_Spoiler;
-            this.pictureBox3.Location = new System.Drawing.Point(309, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(301, 174);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxCarBack.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBoxCarBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxCarBack.Image = global::BuildYouOwnCar.Properties.Resources.Loading_Circule;
+            this.pictureBoxCarBack.Location = new System.Drawing.Point(309, 3);
+            this.pictureBoxCarBack.Name = "pictureBoxCarBack";
+            this.pictureBoxCarBack.Size = new System.Drawing.Size(301, 174);
+            this.pictureBoxCarBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCarBack.TabIndex = 2;
+            this.pictureBoxCarBack.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxCarSide
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::BuildYouOwnCar.Properties.Resources.Lada2114_Wheels;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 174);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxCarSide.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBoxCarSide.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxCarSide.Image = global::BuildYouOwnCar.Properties.Resources.Loading_Circule;
+            this.pictureBoxCarSide.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxCarSide.Name = "pictureBoxCarSide";
+            this.pictureBoxCarSide.Size = new System.Drawing.Size(300, 174);
+            this.pictureBoxCarSide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCarSide.TabIndex = 1;
+            this.pictureBoxCarSide.TabStop = false;
             // 
             // labelCarName
             // 
@@ -270,11 +271,11 @@
             // 
             this.labelColorName.AutoSize = true;
             this.labelColorName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelColorName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelColorName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelColorName.ForeColor = System.Drawing.Color.White;
             this.labelColorName.Location = new System.Drawing.Point(0, 0);
             this.labelColorName.Name = "labelColorName";
-            this.labelColorName.Size = new System.Drawing.Size(62, 21);
+            this.labelColorName.Size = new System.Drawing.Size(63, 21);
             this.labelColorName.TabIndex = 1;
             this.labelColorName.Text = "Синий";
             // 
@@ -330,11 +331,11 @@
             // 
             this.labelWheelsName.AutoSize = true;
             this.labelWheelsName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelWheelsName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelWheelsName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelWheelsName.ForeColor = System.Drawing.Color.White;
             this.labelWheelsName.Location = new System.Drawing.Point(0, 0);
             this.labelWheelsName.Name = "labelWheelsName";
-            this.labelWheelsName.Size = new System.Drawing.Size(100, 21);
+            this.labelWheelsName.Size = new System.Drawing.Size(85, 21);
             this.labelWheelsName.TabIndex = 1;
             this.labelWheelsName.Text = "Стандарт";
             // 
@@ -390,11 +391,11 @@
             // 
             this.labelSpoilerName.AutoSize = true;
             this.labelSpoilerName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelSpoilerName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSpoilerName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSpoilerName.ForeColor = System.Drawing.Color.White;
             this.labelSpoilerName.Location = new System.Drawing.Point(0, 0);
             this.labelSpoilerName.Name = "labelSpoilerName";
-            this.labelSpoilerName.Size = new System.Drawing.Size(100, 21);
+            this.labelSpoilerName.Size = new System.Drawing.Size(85, 21);
             this.labelSpoilerName.TabIndex = 1;
             this.labelSpoilerName.Text = "Стандарт";
             // 
@@ -410,26 +411,26 @@
             this.labelSpoiler.TabIndex = 0;
             this.labelSpoiler.Text = "Спойлер";
             // 
-            // panel2
+            // panelAtributes
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.panelSpoiler);
-            this.panel2.Controls.Add(this.panelWheels);
-            this.panel2.Controls.Add(this.panelColor);
-            this.panel2.Controls.Add(this.panelStartingPrice);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(619, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(365, 576);
-            this.panel2.TabIndex = 2;
+            this.panelAtributes.AutoScroll = true;
+            this.panelAtributes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelAtributes.Controls.Add(this.panelSpoiler);
+            this.panelAtributes.Controls.Add(this.panelWheels);
+            this.panelAtributes.Controls.Add(this.panelColor);
+            this.panelAtributes.Controls.Add(this.panelStartingPrice);
+            this.panelAtributes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelAtributes.Location = new System.Drawing.Point(619, 0);
+            this.panelAtributes.Name = "panelAtributes";
+            this.panelAtributes.Size = new System.Drawing.Size(365, 576);
+            this.panelAtributes.TabIndex = 2;
             // 
             // panelStartingPrice
             // 
             this.panelStartingPrice.BackColor = System.Drawing.Color.Maroon;
             this.panelStartingPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelStartingPrice.Controls.Add(this.labelStartingPriceCount);
-            this.panelStartingPrice.Controls.Add(this.labelStartingPriceName);
+            this.panelStartingPrice.Controls.Add(this.labelStartPrice);
+            this.panelStartingPrice.Controls.Add(this.labelStartingPriceText);
             this.panelStartingPrice.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelStartingPrice.Location = new System.Drawing.Point(0, 0);
             this.panelStartingPrice.Margin = new System.Windows.Forms.Padding(0);
@@ -437,29 +438,29 @@
             this.panelStartingPrice.Size = new System.Drawing.Size(365, 34);
             this.panelStartingPrice.TabIndex = 3;
             // 
-            // labelStartingPriceCount
+            // labelStartPrice
             // 
-            this.labelStartingPriceCount.AutoSize = true;
-            this.labelStartingPriceCount.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelStartingPriceCount.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelStartingPriceCount.ForeColor = System.Drawing.Color.White;
-            this.labelStartingPriceCount.Location = new System.Drawing.Point(283, 0);
-            this.labelStartingPriceCount.Name = "labelStartingPriceCount";
-            this.labelStartingPriceCount.Size = new System.Drawing.Size(80, 23);
-            this.labelStartingPriceCount.TabIndex = 3;
-            this.labelStartingPriceCount.Text = "50 000р";
+            this.labelStartPrice.AutoSize = true;
+            this.labelStartPrice.Dock = System.Windows.Forms.DockStyle.Right;
+            this.labelStartPrice.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelStartPrice.ForeColor = System.Drawing.Color.White;
+            this.labelStartPrice.Location = new System.Drawing.Point(283, 0);
+            this.labelStartPrice.Name = "labelStartPrice";
+            this.labelStartPrice.Size = new System.Drawing.Size(80, 23);
+            this.labelStartPrice.TabIndex = 3;
+            this.labelStartPrice.Text = "50 000р";
             // 
-            // labelStartingPriceName
+            // labelStartingPriceText
             // 
-            this.labelStartingPriceName.AutoSize = true;
-            this.labelStartingPriceName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelStartingPriceName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelStartingPriceName.ForeColor = System.Drawing.Color.White;
-            this.labelStartingPriceName.Location = new System.Drawing.Point(0, 0);
-            this.labelStartingPriceName.Name = "labelStartingPriceName";
-            this.labelStartingPriceName.Size = new System.Drawing.Size(189, 26);
-            this.labelStartingPriceName.TabIndex = 0;
-            this.labelStartingPriceName.Text = "Начальная цена";
+            this.labelStartingPriceText.AutoSize = true;
+            this.labelStartingPriceText.Dock = System.Windows.Forms.DockStyle.Left;
+            this.labelStartingPriceText.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelStartingPriceText.ForeColor = System.Drawing.Color.White;
+            this.labelStartingPriceText.Location = new System.Drawing.Point(0, 0);
+            this.labelStartingPriceText.Name = "labelStartingPriceText";
+            this.labelStartingPriceText.Size = new System.Drawing.Size(189, 26);
+            this.labelStartingPriceText.TabIndex = 0;
+            this.labelStartingPriceText.Text = "Начальная цена";
             // 
             // Summary
             // 
@@ -467,7 +468,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelAtributes);
             this.Controls.Add(this.panelAutoInfo);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -481,10 +482,10 @@
             this.panelAutoInfo.ResumeLayout(false);
             this.panelAutoInfo.PerformLayout();
             this.tableLayoutPanelCarImage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCarFront)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCarBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCarSide)).EndInit();
             this.panelColor.ResumeLayout(false);
             this.panelColor.PerformLayout();
             this.panelColorInfo.ResumeLayout(false);
@@ -497,7 +498,7 @@
             this.panelSpoiler.PerformLayout();
             this.panelSpoilerInfo.ResumeLayout(false);
             this.panelSpoilerInfo.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.panelAtributes.ResumeLayout(false);
             this.panelStartingPrice.ResumeLayout(false);
             this.panelStartingPrice.PerformLayout();
             this.ResumeLayout(false);
@@ -524,18 +525,18 @@
         private System.Windows.Forms.Label labelSpoilerPrice;
         private System.Windows.Forms.Label labelSpoilerName;
         private System.Windows.Forms.Label labelSpoiler;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelAtributes;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelFinalPrice;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonBuildAnotherCar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelCarImage;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxCarFront;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxCarBack;
+        private System.Windows.Forms.PictureBox pictureBoxCarSide;
         private System.Windows.Forms.Panel panelStartingPrice;
-        private System.Windows.Forms.Label labelStartingPriceCount;
-        private System.Windows.Forms.Label labelStartingPriceName;
+        private System.Windows.Forms.Label labelStartPrice;
+        private System.Windows.Forms.Label labelStartingPriceText;
     }
 }

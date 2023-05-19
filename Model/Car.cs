@@ -103,9 +103,32 @@ namespace Model
             _images = DB.GetCarImagesByCarAttributes(this.Id, this.color.Id, this.wheels.Id, this.spoiler.Id);
         }
 
-        public void availableColors()
+        public List<Color> GetAvailableColors()
         {
-
+            List<Color> colors = new List<Color>();
+            foreach(var color_id in DB.GetAvailableColorsByCarId(Id))
+            {
+                colors.Add(Color.GetById(color_id));
+            }
+            return colors;
+        }
+        public List<Wheels> GetAvailableWheels()
+        {
+            List<Wheels > wheels = new List<Wheels >();
+            foreach (var wheels_id in DB.GetAvailableWheelsByCarAndColorIds(Id, color.Id))
+            {
+                wheels.Add(Wheels.GetById(wheels_id));
+            }
+            return wheels;
+        }
+        public List<Spoiler> GetAvailableSpoilers()
+        {
+            List<Spoiler> spoilers = new List<Spoiler>();
+            foreach (var wheels_id in DB.GetAvailableSpoilersByCarColorAndWheelsIds(Id, color.Id, wheels.Id))
+            {
+                spoilers.Add(Spoiler.GetById(wheels_id));
+            }
+            return spoilers;
         }
     }
 }

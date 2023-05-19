@@ -90,7 +90,7 @@
             this.splitContainer.Panel2.Controls.Add(this.flowLayoutPanelColors);
             this.splitContainer.Panel2.Controls.Add(this.tableLayoutPanel);
             this.splitContainer.Panel2.Controls.Add(this.labelColors);
-            this.splitContainer.Size = new System.Drawing.Size(984, 421);
+            this.splitContainer.Size = new System.Drawing.Size(984, 426);
             this.splitContainer.SplitterDistance = 646;
             this.splitContainer.SplitterWidth = 2;
             this.splitContainer.TabIndex = 0;
@@ -99,11 +99,13 @@
             // 
             this.pictureBoxCar.BackColor = System.Drawing.Color.Black;
             this.pictureBoxCar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxCar.Image = global::BuildYouOwnCar.Properties.Resources.Lada2114_Color;
+            this.pictureBoxCar.ErrorImage = global::BuildYouOwnCar.Properties.Resources.NoFound404;
+            this.pictureBoxCar.Image = global::BuildYouOwnCar.Properties.Resources.CarLoading_Orange;
+            this.pictureBoxCar.InitialImage = global::BuildYouOwnCar.Properties.Resources.CarLoading_Orange;
             this.pictureBoxCar.Location = new System.Drawing.Point(0, 48);
             this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxCar.Name = "pictureBoxCar";
-            this.pictureBoxCar.Size = new System.Drawing.Size(646, 373);
+            this.pictureBoxCar.Size = new System.Drawing.Size(646, 378);
             this.pictureBoxCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCar.TabIndex = 1;
             this.pictureBoxCar.TabStop = false;
@@ -133,7 +135,7 @@
             this.flowLayoutPanelColors.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelColors.Location = new System.Drawing.Point(0, 48);
             this.flowLayoutPanelColors.Name = "flowLayoutPanelColors";
-            this.flowLayoutPanelColors.Size = new System.Drawing.Size(336, 321);
+            this.flowLayoutPanelColors.Size = new System.Drawing.Size(336, 326);
             this.flowLayoutPanelColors.TabIndex = 4;
             // 
             // panelColorWhite
@@ -339,7 +341,7 @@
             this.tableLayoutPanel.Controls.Add(this.buttoGoNext, 1, 0);
             this.tableLayoutPanel.Controls.Add(this.buttonGoBack, 0, 0);
             this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel.Location = new System.Drawing.Point(0, 369);
+            this.tableLayoutPanel.Location = new System.Drawing.Point(0, 374);
             this.tableLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 1;
@@ -357,6 +359,7 @@
             this.buttoGoNext.TabIndex = 0;
             this.buttoGoNext.Text = "Далее";
             this.buttoGoNext.UseVisualStyleBackColor = true;
+            this.buttoGoNext.Click += new System.EventHandler(this.buttoGoNext_Click);
             // 
             // buttonGoBack
             // 
@@ -368,6 +371,7 @@
             this.buttonGoBack.TabIndex = 1;
             this.buttonGoBack.Text = "Отмена";
             this.buttonGoBack.UseVisualStyleBackColor = true;
+            this.buttonGoBack.Click += new System.EventHandler(this.buttonGoBack_Click);
             // 
             // labelColors
             // 
@@ -388,12 +392,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(984, 421);
+            this.ClientSize = new System.Drawing.Size(984, 426);
             this.Controls.Add(this.splitContainer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(610, 330);
+            this.MinimumSize = new System.Drawing.Size(605, 315);
             this.Name = "Color";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "BYOC_Color";
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel2.ResumeLayout(false);
