@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/BuildYouOwnCar/Images
+/BuildYouOwnCar/Resources/CarLoading_Orange.gif
+/BuildYouOwnCar/Resources/Loading_Circule.gif
