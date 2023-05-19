@@ -114,16 +114,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Resources\App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NoFound404.gif" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\Cars\" />
-    <Folder Include="Images\Spoilers\" />
-    <Folder Include="Images\Wheels\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Lada2114_Main.png" />
   </ItemGroup>
@@ -192,6 +188,71 @@
       <Project>{a854122f-68bb-4ba2-8f0b-cb90174bbb21}</Project>
       <Name>Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Cars\Lada2114\Back\Black_Barracuda_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_Barracuda_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_Barracuda_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_Bellagio_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_Bellagio_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_Bellagio_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_MSW24_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_MSW24_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_MSW24_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_Standart_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_Standart_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Black_Standart_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Green_Barracuda_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Green_Barracuda_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Green_MSW24_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Green_MSW24_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Green_Standart_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Back\Green_Standart_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_Barracuda_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_Barracuda_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_Barracuda_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_Bellagio_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_Bellagio_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_Bellagio_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_MSW24_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_MSW24_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_MSW24_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_Standart_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_Standart_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Black_Standart_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Green_Barracuda_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Green_Barracuda_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Green_MSW24_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Green_MSW24_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Green_Standart_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Front\Green_Standart_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_Barracuda_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_Barracuda_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_Barracuda_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_Bellagio_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_Bellagio_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_Bellagio_Without.png.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_MSW24_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_MSW24_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_MSW24_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_Standart_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_Standart_Vert.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Black_Standart_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Green_Barracuda_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Green_Barracuda_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Green_MSW24_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Green_MSW24_Without.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Green_Standart_Standart.png" />
+    <Content Include="Images\Cars\Lada2114\Side\Green_Standart_Without.png" />
+    <None Include="Images\Spoilers\None.png" />
+    <Content Include="Images\Spoilers\Standart_VAZ2114.png" />
+    <Content Include="Images\Spoilers\Vert.png" />
+    <Content Include="Images\Wheels\Barracuda.png" />
+    <Content Include="Images\Wheels\Bellagio.png" />
+    <Content Include="Images\Wheels\MSW24.png" />
+    <Content Include="Images\Wheels\Standart_VAZ2114.png" />
+    <None Include="Resources\Loading_Circule.gif" />
+    <None Include="Resources\CarLoading_Orange.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CarLoading_Orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarLoading_Orange.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="spoiler_LadaDefolt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spoiler_LadaDefolt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +160,9 @@
   <data name="WhiteCheckMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhiteCheckMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Matiz_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Matiz_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Lada2114_Spoiler" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lada2114_Spoiler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,11 +172,11 @@
   <data name="Lada2114_Wheels" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lada2114_Wheels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NoFound404" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NoFound404.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Matiz_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Matiz_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MazdaRX7_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MazdaRX7_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,7 +187,7 @@
   <data name="Lada2114_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lada2114_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Loading_Circule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Loading_Circule.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

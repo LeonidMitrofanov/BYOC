@@ -77,7 +77,7 @@
             this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer.IsSplitterFixed = true;
             this.splitContainer.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer.Margin = new System.Windows.Forms.Padding(2);
+            this.splitContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer.Name = "splitContainer";
             // 
             // splitContainer.Panel1
@@ -90,20 +90,21 @@
             this.splitContainer.Panel2.Controls.Add(this.flowLayoutPanelColors);
             this.splitContainer.Panel2.Controls.Add(this.tableLayoutPanel);
             this.splitContainer.Panel2.Controls.Add(this.labelColors);
-            this.splitContainer.Size = new System.Drawing.Size(984, 421);
-            this.splitContainer.SplitterDistance = 646;
-            this.splitContainer.SplitterWidth = 2;
+            this.splitContainer.Size = new System.Drawing.Size(1968, 819);
+            this.splitContainer.SplitterDistance = 1292;
             this.splitContainer.TabIndex = 0;
             // 
             // pictureBoxCar
             // 
             this.pictureBoxCar.BackColor = System.Drawing.Color.Black;
             this.pictureBoxCar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxCar.Image = global::BuildYouOwnCar.Properties.Resources.Lada2114_Color;
-            this.pictureBoxCar.Location = new System.Drawing.Point(0, 48);
-            this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxCar.ErrorImage = global::BuildYouOwnCar.Properties.Resources.NoFound404;
+            this.pictureBoxCar.Image = global::BuildYouOwnCar.Properties.Resources.CarLoading_Orange;
+            this.pictureBoxCar.InitialImage = global::BuildYouOwnCar.Properties.Resources.CarLoading_Orange;
+            this.pictureBoxCar.Location = new System.Drawing.Point(0, 92);
+            this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxCar.Name = "pictureBoxCar";
-            this.pictureBoxCar.Size = new System.Drawing.Size(646, 373);
+            this.pictureBoxCar.Size = new System.Drawing.Size(1292, 727);
             this.pictureBoxCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCar.TabIndex = 1;
             this.pictureBoxCar.TabStop = false;
@@ -115,9 +116,9 @@
             this.labelCarName.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCarName.ForeColor = System.Drawing.Color.White;
             this.labelCarName.Location = new System.Drawing.Point(0, 0);
-            this.labelCarName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCarName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCarName.Name = "labelCarName";
-            this.labelCarName.Size = new System.Drawing.Size(646, 48);
+            this.labelCarName.Size = new System.Drawing.Size(1292, 92);
             this.labelCarName.TabIndex = 0;
             this.labelCarName.Text = "Создай свою мечту Lada 2114";
             // 
@@ -131,9 +132,10 @@
             this.flowLayoutPanelColors.Controls.Add(this.panelColorYellow);
             this.flowLayoutPanelColors.Controls.Add(this.panelColorBlue);
             this.flowLayoutPanelColors.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanelColors.Location = new System.Drawing.Point(0, 48);
+            this.flowLayoutPanelColors.Location = new System.Drawing.Point(0, 92);
+            this.flowLayoutPanelColors.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.flowLayoutPanelColors.Name = "flowLayoutPanelColors";
-            this.flowLayoutPanelColors.Size = new System.Drawing.Size(336, 321);
+            this.flowLayoutPanelColors.Size = new System.Drawing.Size(672, 627);
             this.flowLayoutPanelColors.TabIndex = 4;
             // 
             // panelColorWhite
@@ -143,10 +145,10 @@
             this.panelColorWhite.Controls.Add(this.pictureBox1);
             this.panelColorWhite.Controls.Add(this.label1);
             this.panelColorWhite.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelColorWhite.Location = new System.Drawing.Point(5, 5);
-            this.panelColorWhite.Margin = new System.Windows.Forms.Padding(5);
+            this.panelColorWhite.Location = new System.Drawing.Point(10, 10);
+            this.panelColorWhite.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.panelColorWhite.Name = "panelColorWhite";
-            this.panelColorWhite.Size = new System.Drawing.Size(140, 60);
+            this.panelColorWhite.Size = new System.Drawing.Size(278, 114);
             this.panelColorWhite.TabIndex = 1;
             // 
             // pictureBox1
@@ -154,9 +156,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = global::BuildYouOwnCar.Properties.Resources.BlackCheckMark;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(74, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -168,10 +170,10 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(0, 37);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(0, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 21);
+            this.label1.Size = new System.Drawing.Size(120, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Белый";
             // 
@@ -182,10 +184,10 @@
             this.panelColorBlack.Controls.Add(this.pictureBox2);
             this.panelColorBlack.Controls.Add(this.label2);
             this.panelColorBlack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelColorBlack.Location = new System.Drawing.Point(155, 5);
-            this.panelColorBlack.Margin = new System.Windows.Forms.Padding(5);
+            this.panelColorBlack.Location = new System.Drawing.Point(308, 10);
+            this.panelColorBlack.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.panelColorBlack.Name = "panelColorBlack";
-            this.panelColorBlack.Size = new System.Drawing.Size(140, 60);
+            this.panelColorBlack.Size = new System.Drawing.Size(278, 114);
             this.panelColorBlack.TabIndex = 2;
             // 
             // pictureBox2
@@ -193,9 +195,9 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Image = global::BuildYouOwnCar.Properties.Resources.WhiteCheckMark;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 37);
+            this.pictureBox2.Size = new System.Drawing.Size(68, 71);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -207,10 +209,10 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(0, 37);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(0, 71);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 21);
+            this.label2.Size = new System.Drawing.Size(261, 41);
             this.label2.TabIndex = 0;
             this.label2.Text = "Камуфляж снег";
             // 
@@ -221,10 +223,10 @@
             this.panelColorRed.Controls.Add(this.pictureBox3);
             this.panelColorRed.Controls.Add(this.label3);
             this.panelColorRed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelColorRed.Location = new System.Drawing.Point(5, 75);
-            this.panelColorRed.Margin = new System.Windows.Forms.Padding(5);
+            this.panelColorRed.Location = new System.Drawing.Point(10, 144);
+            this.panelColorRed.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.panelColorRed.Name = "panelColorRed";
-            this.panelColorRed.Size = new System.Drawing.Size(140, 60);
+            this.panelColorRed.Size = new System.Drawing.Size(278, 114);
             this.panelColorRed.TabIndex = 3;
             // 
             // pictureBox3
@@ -232,9 +234,9 @@
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox3.Image = global::BuildYouOwnCar.Properties.Resources.BlackCheckMark;
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(34, 37);
+            this.pictureBox3.Size = new System.Drawing.Size(68, 71);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -246,10 +248,10 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(0, 37);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(0, 71);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 21);
+            this.label3.Size = new System.Drawing.Size(157, 41);
             this.label3.TabIndex = 0;
             this.label3.Text = "Красный";
             // 
@@ -260,10 +262,10 @@
             this.panelColorYellow.Controls.Add(this.pictureBoxSelectionStatus);
             this.panelColorYellow.Controls.Add(this.labelColorName);
             this.panelColorYellow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelColorYellow.Location = new System.Drawing.Point(155, 75);
-            this.panelColorYellow.Margin = new System.Windows.Forms.Padding(5);
+            this.panelColorYellow.Location = new System.Drawing.Point(308, 144);
+            this.panelColorYellow.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.panelColorYellow.Name = "panelColorYellow";
-            this.panelColorYellow.Size = new System.Drawing.Size(140, 60);
+            this.panelColorYellow.Size = new System.Drawing.Size(278, 114);
             this.panelColorYellow.TabIndex = 0;
             // 
             // pictureBoxSelectionStatus
@@ -271,9 +273,9 @@
             this.pictureBoxSelectionStatus.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBoxSelectionStatus.Image = global::BuildYouOwnCar.Properties.Resources.BlackCheckMark;
             this.pictureBoxSelectionStatus.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxSelectionStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxSelectionStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxSelectionStatus.Name = "pictureBoxSelectionStatus";
-            this.pictureBoxSelectionStatus.Size = new System.Drawing.Size(34, 37);
+            this.pictureBoxSelectionStatus.Size = new System.Drawing.Size(68, 71);
             this.pictureBoxSelectionStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxSelectionStatus.TabIndex = 1;
             this.pictureBoxSelectionStatus.TabStop = false;
@@ -285,10 +287,10 @@
             this.labelColorName.BackColor = System.Drawing.Color.White;
             this.labelColorName.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelColorName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelColorName.Location = new System.Drawing.Point(0, 37);
-            this.labelColorName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelColorName.Location = new System.Drawing.Point(0, 71);
+            this.labelColorName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelColorName.Name = "labelColorName";
-            this.labelColorName.Size = new System.Drawing.Size(113, 21);
+            this.labelColorName.Size = new System.Drawing.Size(226, 41);
             this.labelColorName.TabIndex = 0;
             this.labelColorName.Text = "Gunship Gray";
             // 
@@ -299,10 +301,10 @@
             this.panelColorBlue.Controls.Add(this.pictureBox4);
             this.panelColorBlue.Controls.Add(this.label4);
             this.panelColorBlue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelColorBlue.Location = new System.Drawing.Point(5, 145);
-            this.panelColorBlue.Margin = new System.Windows.Forms.Padding(5);
+            this.panelColorBlue.Location = new System.Drawing.Point(10, 278);
+            this.panelColorBlue.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.panelColorBlue.Name = "panelColorBlue";
-            this.panelColorBlue.Size = new System.Drawing.Size(140, 60);
+            this.panelColorBlue.Size = new System.Drawing.Size(278, 114);
             this.panelColorBlue.TabIndex = 4;
             this.panelColorBlue.Visible = false;
             // 
@@ -311,9 +313,9 @@
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox4.Image = global::BuildYouOwnCar.Properties.Resources.BlackCheckMark;
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(34, 37);
+            this.pictureBox4.Size = new System.Drawing.Size(68, 71);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -324,10 +326,10 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(0, 37);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(0, 71);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 21);
+            this.label4.Size = new System.Drawing.Size(119, 41);
             this.label4.TabIndex = 0;
             this.label4.Text = "Синий";
             // 
@@ -339,35 +341,37 @@
             this.tableLayoutPanel.Controls.Add(this.buttoGoNext, 1, 0);
             this.tableLayoutPanel.Controls.Add(this.buttonGoBack, 0, 0);
             this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel.Location = new System.Drawing.Point(0, 369);
-            this.tableLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel.Location = new System.Drawing.Point(0, 719);
+            this.tableLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 1;
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(336, 52);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(672, 100);
             this.tableLayoutPanel.TabIndex = 3;
             // 
             // buttoGoNext
             // 
             this.buttoGoNext.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttoGoNext.Location = new System.Drawing.Point(137, 2);
-            this.buttoGoNext.Margin = new System.Windows.Forms.Padding(2);
+            this.buttoGoNext.Location = new System.Drawing.Point(274, 4);
+            this.buttoGoNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttoGoNext.Name = "buttoGoNext";
-            this.buttoGoNext.Size = new System.Drawing.Size(197, 48);
+            this.buttoGoNext.Size = new System.Drawing.Size(394, 92);
             this.buttoGoNext.TabIndex = 0;
             this.buttoGoNext.Text = "Далее";
             this.buttoGoNext.UseVisualStyleBackColor = true;
+            this.buttoGoNext.Click += new System.EventHandler(this.buttoGoNext_Click);
             // 
             // buttonGoBack
             // 
             this.buttonGoBack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonGoBack.Location = new System.Drawing.Point(2, 2);
-            this.buttonGoBack.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGoBack.Location = new System.Drawing.Point(4, 4);
+            this.buttonGoBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonGoBack.Name = "buttonGoBack";
-            this.buttonGoBack.Size = new System.Drawing.Size(131, 48);
+            this.buttonGoBack.Size = new System.Drawing.Size(262, 92);
             this.buttonGoBack.TabIndex = 1;
             this.buttonGoBack.Text = "Отмена";
             this.buttonGoBack.UseVisualStyleBackColor = true;
+            this.buttonGoBack.Click += new System.EventHandler(this.buttonGoBack_Click);
             // 
             // labelColors
             // 
@@ -377,23 +381,24 @@
             this.labelColors.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelColors.ForeColor = System.Drawing.Color.White;
             this.labelColors.Location = new System.Drawing.Point(0, 0);
-            this.labelColors.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelColors.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelColors.Name = "labelColors";
-            this.labelColors.Size = new System.Drawing.Size(336, 48);
+            this.labelColors.Size = new System.Drawing.Size(672, 92);
             this.labelColors.TabIndex = 1;
             this.labelColors.Text = "Цвет";
             // 
             // Color
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(984, 421);
+            this.ClientSize = new System.Drawing.Size(1968, 819);
             this.Controls.Add(this.splitContainer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(610, 330);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1184, 540);
             this.Name = "Color";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "BYOC_Color";
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel2.ResumeLayout(false);
