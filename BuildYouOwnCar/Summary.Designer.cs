@@ -224,7 +224,7 @@
             this.labelCarName.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCarName.ForeColor = System.Drawing.Color.White;
             this.labelCarName.Location = new System.Drawing.Point(0, 0);
-            this.labelCarName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.labelCarName.Margin = new System.Windows.Forms.Padding(5);
             this.labelCarName.Name = "labelCarName";
             this.labelCarName.Size = new System.Drawing.Size(156, 36);
             this.labelCarName.TabIndex = 0;

@@ -78,8 +78,8 @@
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.flowLayoutPanelSpoilers);
-            this.splitContainer.Size = new System.Drawing.Size(761, 661);
-            this.splitContainer.SplitterDistance = 447;
+            this.splitContainer.Size = new System.Drawing.Size(761, 681);
+            this.splitContainer.SplitterDistance = 446;
             this.splitContainer.SplitterWidth = 2;
             this.splitContainer.TabIndex = 1;
             // 
@@ -134,7 +134,7 @@
             this.pictureBoxCar.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxCar.Name = "pictureBoxCar";
-            this.pictureBoxCar.Size = new System.Drawing.Size(761, 447);
+            this.pictureBoxCar.Size = new System.Drawing.Size(761, 446);
             this.pictureBoxCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCar.TabIndex = 0;
             this.pictureBoxCar.TabStop = false;
@@ -149,7 +149,7 @@
             this.flowLayoutPanelSpoilers.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelSpoilers.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanelSpoilers.Name = "flowLayoutPanelSpoilers";
-            this.flowLayoutPanelSpoilers.Size = new System.Drawing.Size(761, 212);
+            this.flowLayoutPanelSpoilers.Size = new System.Drawing.Size(761, 233);
             this.flowLayoutPanelSpoilers.TabIndex = 0;
             this.flowLayoutPanelSpoilers.WrapContents = false;
             // 
@@ -280,7 +280,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 661);
+            this.ClientSize = new System.Drawing.Size(761, 681);
             this.Controls.Add(this.splitContainer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(325, 435);
@@ -313,15 +313,15 @@
         private System.Windows.Forms.Button buttonGoBack;
         private System.Windows.Forms.PictureBox pictureBoxCar;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSpoilers;
-        private System.Windows.Forms.Panel panelSpoiler;
-        private System.Windows.Forms.PictureBox pictureBoxStatus;
-        private System.Windows.Forms.Label labelWheelsName;
-        private System.Windows.Forms.PictureBox pictureBoxSpoiler;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panelSpoiler;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBoxStatus;
+        private System.Windows.Forms.Label labelWheelsName;
+        private System.Windows.Forms.PictureBox pictureBoxSpoiler;
     }
 }
