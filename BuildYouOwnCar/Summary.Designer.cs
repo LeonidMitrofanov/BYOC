@@ -80,14 +80,12 @@
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.buttonBuildAnotherCar);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1109);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Location = new System.Drawing.Point(0, 586);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1968, 162);
+            this.panel1.Size = new System.Drawing.Size(904, 85);
             this.panel1.TabIndex = 0;
             // 
             // buttonBuildAnotherCar
@@ -99,10 +97,10 @@
             this.buttonBuildAnotherCar.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonBuildAnotherCar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.buttonBuildAnotherCar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBuildAnotherCar.Location = new System.Drawing.Point(0, 108);
-            this.buttonBuildAnotherCar.Margin = new System.Windows.Forms.Padding(200, 6, 6, 6);
+            this.buttonBuildAnotherCar.Location = new System.Drawing.Point(0, 56);
+            this.buttonBuildAnotherCar.Margin = new System.Windows.Forms.Padding(100, 3, 3, 3);
             this.buttonBuildAnotherCar.Name = "buttonBuildAnotherCar";
-            this.buttonBuildAnotherCar.Size = new System.Drawing.Size(416, 52);
+            this.buttonBuildAnotherCar.Size = new System.Drawing.Size(233, 29);
             this.buttonBuildAnotherCar.TabIndex = 3;
             this.buttonBuildAnotherCar.Text = "Создать новый автомобиль";
             this.buttonBuildAnotherCar.UseVisualStyleBackColor = false;
@@ -114,9 +112,8 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1966, 108);
+            this.panel3.Size = new System.Drawing.Size(904, 56);
             this.panel3.TabIndex = 2;
             // 
             // labelFinalPrice
@@ -125,10 +122,9 @@
             this.labelFinalPrice.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelFinalPrice.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFinalPrice.ForeColor = System.Drawing.Color.White;
-            this.labelFinalPrice.Location = new System.Drawing.Point(1745, 0);
-            this.labelFinalPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelFinalPrice.Location = new System.Drawing.Point(792, 0);
             this.labelFinalPrice.Name = "labelFinalPrice";
-            this.labelFinalPrice.Size = new System.Drawing.Size(221, 67);
+            this.labelFinalPrice.Size = new System.Drawing.Size(112, 32);
             this.labelFinalPrice.TabIndex = 2;
             this.labelFinalPrice.Text = "53 000р";
             // 
@@ -139,9 +135,8 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(419, 62);
+            this.label2.Size = new System.Drawing.Size(211, 31);
             this.label2.TabIndex = 1;
             this.label2.Text = "Итоговая сумма";
             // 
@@ -151,9 +146,8 @@
             this.panelAutoInfo.Controls.Add(this.labelCarName);
             this.panelAutoInfo.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelAutoInfo.Location = new System.Drawing.Point(0, 0);
-            this.panelAutoInfo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelAutoInfo.Name = "panelAutoInfo";
-            this.panelAutoInfo.Size = new System.Drawing.Size(1238, 1109);
+            this.panelAutoInfo.Size = new System.Drawing.Size(619, 586);
             this.panelAutoInfo.TabIndex = 1;
             // 
             // tableLayoutPanelCarImage
@@ -164,13 +158,12 @@
             this.tableLayoutPanelCarImage.Controls.Add(this.pictureBoxCarFront, 0, 0);
             this.tableLayoutPanelCarImage.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanelCarImage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanelCarImage.Location = new System.Drawing.Point(0, 73);
-            this.tableLayoutPanelCarImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanelCarImage.Location = new System.Drawing.Point(0, 36);
             this.tableLayoutPanelCarImage.Name = "tableLayoutPanelCarImage";
             this.tableLayoutPanelCarImage.RowCount = 2;
-            this.tableLayoutPanelCarImage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 696F));
-            this.tableLayoutPanelCarImage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 212F));
-            this.tableLayoutPanelCarImage.Size = new System.Drawing.Size(1238, 1054);
+            this.tableLayoutPanelCarImage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 362F));
+            this.tableLayoutPanelCarImage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
+            this.tableLayoutPanelCarImage.Size = new System.Drawing.Size(619, 548);
             this.tableLayoutPanelCarImage.TabIndex = 1;
             // 
             // pictureBoxCarFront
@@ -178,10 +171,9 @@
             this.pictureBoxCarFront.BackColor = System.Drawing.Color.Maroon;
             this.pictureBoxCarFront.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxCarFront.Image = global::BuildYouOwnCar.Properties.Resources.Loading_Circule;
-            this.pictureBoxCarFront.Location = new System.Drawing.Point(6, 6);
-            this.pictureBoxCarFront.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBoxCarFront.Location = new System.Drawing.Point(3, 3);
             this.pictureBoxCarFront.Name = "pictureBoxCarFront";
-            this.pictureBoxCarFront.Size = new System.Drawing.Size(1226, 684);
+            this.pictureBoxCarFront.Size = new System.Drawing.Size(613, 356);
             this.pictureBoxCarFront.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCarFront.TabIndex = 0;
             this.pictureBoxCarFront.TabStop = false;
@@ -194,12 +186,11 @@
             this.tableLayoutPanel2.Controls.Add(this.pictureBoxCarBack, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBoxCarSide, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 702);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 365);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1226, 346);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(613, 180);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // pictureBoxCarBack
@@ -207,10 +198,9 @@
             this.pictureBoxCarBack.BackColor = System.Drawing.Color.Maroon;
             this.pictureBoxCarBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxCarBack.Image = global::BuildYouOwnCar.Properties.Resources.Loading_Circule;
-            this.pictureBoxCarBack.Location = new System.Drawing.Point(619, 6);
-            this.pictureBoxCarBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBoxCarBack.Location = new System.Drawing.Point(309, 3);
             this.pictureBoxCarBack.Name = "pictureBoxCarBack";
-            this.pictureBoxCarBack.Size = new System.Drawing.Size(601, 334);
+            this.pictureBoxCarBack.Size = new System.Drawing.Size(301, 174);
             this.pictureBoxCarBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCarBack.TabIndex = 2;
             this.pictureBoxCarBack.TabStop = false;
@@ -220,10 +210,9 @@
             this.pictureBoxCarSide.BackColor = System.Drawing.Color.Maroon;
             this.pictureBoxCarSide.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxCarSide.Image = global::BuildYouOwnCar.Properties.Resources.Loading_Circule;
-            this.pictureBoxCarSide.Location = new System.Drawing.Point(6, 6);
-            this.pictureBoxCarSide.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBoxCarSide.Location = new System.Drawing.Point(3, 3);
             this.pictureBoxCarSide.Name = "pictureBoxCarSide";
-            this.pictureBoxCarSide.Size = new System.Drawing.Size(601, 334);
+            this.pictureBoxCarSide.Size = new System.Drawing.Size(300, 174);
             this.pictureBoxCarSide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCarSide.TabIndex = 1;
             this.pictureBoxCarSide.TabStop = false;
@@ -235,9 +224,9 @@
             this.labelCarName.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCarName.ForeColor = System.Drawing.Color.White;
             this.labelCarName.Location = new System.Drawing.Point(0, 0);
-            this.labelCarName.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.labelCarName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.labelCarName.Name = "labelCarName";
-            this.labelCarName.Size = new System.Drawing.Size(315, 73);
+            this.labelCarName.Size = new System.Drawing.Size(156, 36);
             this.labelCarName.TabIndex = 0;
             this.labelCarName.Text = "Lada 2114";
             // 
@@ -248,10 +237,10 @@
             this.panelColor.Controls.Add(this.panelColorInfo);
             this.panelColor.Controls.Add(this.labelColor);
             this.panelColor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelColor.Location = new System.Drawing.Point(0, 64);
+            this.panelColor.Location = new System.Drawing.Point(0, 34);
             this.panelColor.Margin = new System.Windows.Forms.Padding(0);
             this.panelColor.Name = "panelColor";
-            this.panelColor.Size = new System.Drawing.Size(730, 100);
+            this.panelColor.Size = new System.Drawing.Size(285, 53);
             this.panelColor.TabIndex = 0;
             // 
             // panelColorInfo
@@ -260,10 +249,9 @@
             this.panelColorInfo.Controls.Add(this.labelColorPrice);
             this.panelColorInfo.Controls.Add(this.labelColorName);
             this.panelColorInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelColorInfo.Location = new System.Drawing.Point(0, 55);
-            this.panelColorInfo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelColorInfo.Location = new System.Drawing.Point(0, 26);
             this.panelColorInfo.Name = "panelColorInfo";
-            this.panelColorInfo.Size = new System.Drawing.Size(728, 43);
+            this.panelColorInfo.Size = new System.Drawing.Size(283, 25);
             this.panelColorInfo.TabIndex = 1;
             // 
             // labelColorPrice
@@ -272,10 +260,9 @@
             this.labelColorPrice.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelColorPrice.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelColorPrice.ForeColor = System.Drawing.Color.White;
-            this.labelColorPrice.Location = new System.Drawing.Point(614, 0);
-            this.labelColorPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelColorPrice.Location = new System.Drawing.Point(227, 0);
             this.labelColorPrice.Name = "labelColorPrice";
-            this.labelColorPrice.Size = new System.Drawing.Size(114, 43);
+            this.labelColorPrice.Size = new System.Drawing.Size(56, 21);
             this.labelColorPrice.TabIndex = 2;
             this.labelColorPrice.Text = "1000р";
             // 
@@ -286,9 +273,8 @@
             this.labelColorName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelColorName.ForeColor = System.Drawing.Color.White;
             this.labelColorName.Location = new System.Drawing.Point(0, 0);
-            this.labelColorName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelColorName.Name = "labelColorName";
-            this.labelColorName.Size = new System.Drawing.Size(124, 43);
+            this.labelColorName.Size = new System.Drawing.Size(63, 21);
             this.labelColorName.TabIndex = 1;
             this.labelColorName.Text = "Синий";
             // 
@@ -299,9 +285,8 @@
             this.labelColor.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelColor.ForeColor = System.Drawing.Color.White;
             this.labelColor.Location = new System.Drawing.Point(0, 0);
-            this.labelColor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelColor.Name = "labelColor";
-            this.labelColor.Size = new System.Drawing.Size(131, 55);
+            this.labelColor.Size = new System.Drawing.Size(66, 26);
             this.labelColor.TabIndex = 0;
             this.labelColor.Text = "Цвет";
             // 
@@ -312,10 +297,10 @@
             this.panelWheels.Controls.Add(this.panelWheelsInfo);
             this.panelWheels.Controls.Add(this.labelWheels);
             this.panelWheels.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelWheels.Location = new System.Drawing.Point(0, 164);
+            this.panelWheels.Location = new System.Drawing.Point(0, 87);
             this.panelWheels.Margin = new System.Windows.Forms.Padding(0);
             this.panelWheels.Name = "panelWheels";
-            this.panelWheels.Size = new System.Drawing.Size(730, 100);
+            this.panelWheels.Size = new System.Drawing.Size(285, 53);
             this.panelWheels.TabIndex = 1;
             // 
             // panelWheelsInfo
@@ -324,10 +309,9 @@
             this.panelWheelsInfo.Controls.Add(this.labelWheelsPrice);
             this.panelWheelsInfo.Controls.Add(this.labelWheelsName);
             this.panelWheelsInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelWheelsInfo.Location = new System.Drawing.Point(0, 55);
-            this.panelWheelsInfo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelWheelsInfo.Location = new System.Drawing.Point(0, 26);
             this.panelWheelsInfo.Name = "panelWheelsInfo";
-            this.panelWheelsInfo.Size = new System.Drawing.Size(728, 43);
+            this.panelWheelsInfo.Size = new System.Drawing.Size(283, 25);
             this.panelWheelsInfo.TabIndex = 1;
             // 
             // labelWheelsPrice
@@ -336,10 +320,9 @@
             this.labelWheelsPrice.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelWheelsPrice.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelWheelsPrice.ForeColor = System.Drawing.Color.White;
-            this.labelWheelsPrice.Location = new System.Drawing.Point(671, 0);
-            this.labelWheelsPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelWheelsPrice.Location = new System.Drawing.Point(254, 0);
             this.labelWheelsPrice.Name = "labelWheelsPrice";
-            this.labelWheelsPrice.Size = new System.Drawing.Size(57, 43);
+            this.labelWheelsPrice.Size = new System.Drawing.Size(29, 21);
             this.labelWheelsPrice.TabIndex = 2;
             this.labelWheelsPrice.Text = "0р";
             // 
@@ -350,9 +333,8 @@
             this.labelWheelsName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelWheelsName.ForeColor = System.Drawing.Color.White;
             this.labelWheelsName.Location = new System.Drawing.Point(0, 0);
-            this.labelWheelsName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelWheelsName.Name = "labelWheelsName";
-            this.labelWheelsName.Size = new System.Drawing.Size(168, 43);
+            this.labelWheelsName.Size = new System.Drawing.Size(85, 21);
             this.labelWheelsName.TabIndex = 1;
             this.labelWheelsName.Text = "Стандарт";
             // 
@@ -363,9 +345,8 @@
             this.labelWheels.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelWheels.ForeColor = System.Drawing.Color.White;
             this.labelWheels.Location = new System.Drawing.Point(0, 0);
-            this.labelWheels.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelWheels.Name = "labelWheels";
-            this.labelWheels.Size = new System.Drawing.Size(175, 55);
+            this.labelWheels.Size = new System.Drawing.Size(87, 26);
             this.labelWheels.TabIndex = 0;
             this.labelWheels.Text = "Колеса";
             // 
@@ -376,10 +357,10 @@
             this.panelSpoiler.Controls.Add(this.panelSpoilerInfo);
             this.panelSpoiler.Controls.Add(this.labelSpoiler);
             this.panelSpoiler.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSpoiler.Location = new System.Drawing.Point(0, 264);
+            this.panelSpoiler.Location = new System.Drawing.Point(0, 140);
             this.panelSpoiler.Margin = new System.Windows.Forms.Padding(0);
             this.panelSpoiler.Name = "panelSpoiler";
-            this.panelSpoiler.Size = new System.Drawing.Size(730, 100);
+            this.panelSpoiler.Size = new System.Drawing.Size(285, 53);
             this.panelSpoiler.TabIndex = 2;
             // 
             // panelSpoilerInfo
@@ -388,10 +369,9 @@
             this.panelSpoilerInfo.Controls.Add(this.labelSpoilerPrice);
             this.panelSpoilerInfo.Controls.Add(this.labelSpoilerName);
             this.panelSpoilerInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSpoilerInfo.Location = new System.Drawing.Point(0, 55);
-            this.panelSpoilerInfo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelSpoilerInfo.Location = new System.Drawing.Point(0, 26);
             this.panelSpoilerInfo.Name = "panelSpoilerInfo";
-            this.panelSpoilerInfo.Size = new System.Drawing.Size(728, 43);
+            this.panelSpoilerInfo.Size = new System.Drawing.Size(283, 25);
             this.panelSpoilerInfo.TabIndex = 1;
             // 
             // labelSpoilerPrice
@@ -400,10 +380,9 @@
             this.labelSpoilerPrice.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelSpoilerPrice.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSpoilerPrice.ForeColor = System.Drawing.Color.White;
-            this.labelSpoilerPrice.Location = new System.Drawing.Point(614, 0);
-            this.labelSpoilerPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelSpoilerPrice.Location = new System.Drawing.Point(227, 0);
             this.labelSpoilerPrice.Name = "labelSpoilerPrice";
-            this.labelSpoilerPrice.Size = new System.Drawing.Size(114, 43);
+            this.labelSpoilerPrice.Size = new System.Drawing.Size(56, 21);
             this.labelSpoilerPrice.TabIndex = 2;
             this.labelSpoilerPrice.Text = "2000р";
             // 
@@ -414,9 +393,8 @@
             this.labelSpoilerName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSpoilerName.ForeColor = System.Drawing.Color.White;
             this.labelSpoilerName.Location = new System.Drawing.Point(0, 0);
-            this.labelSpoilerName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelSpoilerName.Name = "labelSpoilerName";
-            this.labelSpoilerName.Size = new System.Drawing.Size(168, 43);
+            this.labelSpoilerName.Size = new System.Drawing.Size(85, 21);
             this.labelSpoilerName.TabIndex = 1;
             this.labelSpoilerName.Text = "Стандарт";
             // 
@@ -427,9 +405,8 @@
             this.labelSpoiler.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSpoiler.ForeColor = System.Drawing.Color.White;
             this.labelSpoiler.Location = new System.Drawing.Point(0, 0);
-            this.labelSpoiler.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelSpoiler.Name = "labelSpoiler";
-            this.labelSpoiler.Size = new System.Drawing.Size(214, 55);
+            this.labelSpoiler.Size = new System.Drawing.Size(106, 26);
             this.labelSpoiler.TabIndex = 0;
             this.labelSpoiler.Text = "Спойлер";
             // 
@@ -442,10 +419,9 @@
             this.panelAtributes.Controls.Add(this.panelColor);
             this.panelAtributes.Controls.Add(this.panelStartingPrice);
             this.panelAtributes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelAtributes.Location = new System.Drawing.Point(1238, 0);
-            this.panelAtributes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelAtributes.Location = new System.Drawing.Point(619, 0);
             this.panelAtributes.Name = "panelAtributes";
-            this.panelAtributes.Size = new System.Drawing.Size(730, 1109);
+            this.panelAtributes.Size = new System.Drawing.Size(285, 586);
             this.panelAtributes.TabIndex = 2;
             // 
             // panelStartingPrice
@@ -458,7 +434,7 @@
             this.panelStartingPrice.Location = new System.Drawing.Point(0, 0);
             this.panelStartingPrice.Margin = new System.Windows.Forms.Padding(0);
             this.panelStartingPrice.Name = "panelStartingPrice";
-            this.panelStartingPrice.Size = new System.Drawing.Size(730, 64);
+            this.panelStartingPrice.Size = new System.Drawing.Size(285, 34);
             this.panelStartingPrice.TabIndex = 3;
             // 
             // labelStartPrice
@@ -467,10 +443,9 @@
             this.labelStartPrice.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelStartPrice.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelStartPrice.ForeColor = System.Drawing.Color.White;
-            this.labelStartPrice.Location = new System.Drawing.Point(571, 0);
-            this.labelStartPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelStartPrice.Location = new System.Drawing.Point(203, 0);
             this.labelStartPrice.Name = "labelStartPrice";
-            this.labelStartPrice.Size = new System.Drawing.Size(157, 48);
+            this.labelStartPrice.Size = new System.Drawing.Size(80, 23);
             this.labelStartPrice.TabIndex = 3;
             this.labelStartPrice.Text = "50 000р";
             // 
@@ -481,24 +456,22 @@
             this.labelStartingPriceText.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelStartingPriceText.ForeColor = System.Drawing.Color.White;
             this.labelStartingPriceText.Location = new System.Drawing.Point(0, 0);
-            this.labelStartingPriceText.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelStartingPriceText.Name = "labelStartingPriceText";
-            this.labelStartingPriceText.Size = new System.Drawing.Size(377, 55);
+            this.labelStartingPriceText.Size = new System.Drawing.Size(189, 26);
             this.labelStartingPriceText.TabIndex = 0;
             this.labelStartingPriceText.Text = "Начальная цена";
             // 
             // Summary
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(1968, 1271);
+            this.ClientSize = new System.Drawing.Size(904, 671);
             this.Controls.Add(this.panelAtributes);
             this.Controls.Add(this.panelAutoInfo);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.MinimumSize = new System.Drawing.Size(654, 444);
+            this.MinimumSize = new System.Drawing.Size(635, 520);
             this.Name = "Summary";
             this.Text = "BYOC_Summary";
             this.panel1.ResumeLayout(false);
